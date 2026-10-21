@@ -31,7 +31,7 @@ it('Deve clicar no terceiro botão adicionar à cesta', () => {
     cy.get('#cart-count').should('contain', 1);    
 });
 
-it.only('Deve clicar no nome do livro', () => {
+it('Deve clicar no nome do livro', () => {
     cy.contains('O Alquimista').click();
     cy.url().should('include', 'book-details');
     cy.get('#add-to-cart-btn').click(); 
